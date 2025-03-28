@@ -14,13 +14,13 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-# echo "src-git alist https://github.com/sbwml/luci-app-alist" >> ./feeds.conf.default
-# echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git" >> ./feeds.conf.default
-# echo "src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git" >> ./feeds.conf.default
 #echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
 #echo "src-git OpenClash https://github.com/vernesong/OpenClash.git" >> ./feeds.conf.default
 
 #添加额外软件包
+#echo "src-git alist https://github.com/sbwml/luci-app-alist" >> ./feeds.conf.default
+#echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git" >> ./feeds.conf.default
+#echo "src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git" >> ./feeds.conf.default
 #git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 #git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
 #git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
