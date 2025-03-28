@@ -23,6 +23,10 @@ sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-defaul
 sed -i 's/ImmortalWrt-2.4G/su_2.4G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 sed -i 's/ImmortalWrt-5G/su_5G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 
+echo "src-git alist https://github.com/sbwml/luci-app-alist" >> ./feeds.conf.default
+echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git" >> ./feeds.conf.default
+echo "src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git" >> ./feeds.conf.default
+
 #修改闪存为256M版本(这是针对原厂128闪存来的，但又要编译256M固件来的）
 #sed -i 's/<0x580000 0x7200000>/<0x580000 0xee00000>/g' target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-cmcc-rax3000m.dts
 #sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
